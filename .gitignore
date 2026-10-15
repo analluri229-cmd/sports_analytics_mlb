@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.duckdb
+data/raw/
+data/baseball/raw/
+.DS_Store
+.env.example
