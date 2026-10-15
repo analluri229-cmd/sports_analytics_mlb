@@ -111,7 +111,7 @@ def plot_rate_heatmaps(bb, rate = "game", bw = None, cmap = "Reds", save = True)
                  f"({denom} {'games' if rate == 'game' else rate.upper()})",
                  x = .02, ha = "left", fontsize = 13)
     if save:
-        plt.savefig(OUT / f"heat_{rate}_{slug(PLAYER_NAME)}_2025.png", dpi = 150, bbox_inches = "tight")
+        plt.savefig(OUT / f"heat_{rate}_{slug(PLAYER_NAME)}_{YEAR}.png", dpi = 150, bbox_inches = "tight")
     plt.show()
 
 plot_rate_heatmaps(bb, rate = "game")

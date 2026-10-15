@@ -72,6 +72,6 @@ fig.colorbar(ScalarMappable(norm = Normalize(0, 1), cmap = CMAP), ax = axes,
              label = "Relative density (1 = densest spot for that outcome)")
 fig.suptitle(f"{PLAYER_NAME} -- 2025 batted-ball hot zones by outcome",
              x = .02, ha = "left", fontsize = 13)
-plt.savefig(OUT / f"heat_{slug(PLAYER_NAME)}_2025.png", dpi = 150, bbox_inches = "tight")
+plt.savefig(OUT / f"heat_{slug(PLAYER_NAME)}_{YEAR}.png", dpi = 150, bbox_inches = "tight")
 plt.show()
 
